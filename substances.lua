@@ -1,17 +1,3 @@
-#Chemistry
-#####By cdqwertz
-This minetest mod provides an api which allows you to register substances and reactions.
-
-###TODO
-- Substance Mixtures
-- Burner
-
-###License
-See LICENSE.txt
-
-###API
-#####Substance
-```lua
 chemistry.register_substance("chemistry:water", {
 	solid = {
 		description = "Ice",
@@ -28,7 +14,7 @@ chemistry.register_substance("chemistry:water", {
 			"default:water_flowing",
 			"default:river_water_source", 
 			"default:river_water_flowing",
-			"default:snow"
+			"default:snowblock"
 		}
 	},
 	gaseous = {
@@ -39,20 +25,3 @@ chemistry.register_substance("chemistry:water", {
 	melting = 0,
 	boiling = 100
 })
-```
-#####Reaction
-```lua
-chemistry.register_reaction({
-	input = {
-		"default:dirt",
-		"default:cobble"
-	},
-	
-	output = {
-		"default:diamond"
-	},
-	
-	effects = {
-	}
-})
-```

@@ -95,3 +95,12 @@ minetest.register_node("chemistry:workbench", {
 		end
 	end,
 })
+
+minetest.register_craft({
+	output = "chemistry:workbench",
+	recipe = {
+		{"default:stone", "default:stone", "default:stone"},
+		{"default:stone", "", "default:stone"},
+		{"default:stone", "", "default:stone"}
+	},
+})

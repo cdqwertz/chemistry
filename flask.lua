@@ -16,3 +16,10 @@ minetest.register_craftitem("chemistry:flask", {
 		return itemstack
 	end,
 })
+
+minetest.register_craft({
+	output = "chemistry:flask",
+	recipe = {
+		{"vessels:glass_bottle"}
+	},
+})
